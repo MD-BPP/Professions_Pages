@@ -16,7 +16,7 @@ html {
 }
 
 ::selection {
-    background: #3f3f3f;
+    background: #F3F3F3;
     color: #fff;
 }
 
@@ -39,6 +39,7 @@ h4 {
 
 p {
     font-size: 16px;
+    font-weight: lighter;
 }
 
 blockquote {
@@ -92,8 +93,12 @@ p + h2, p + blockquote, ul + h2, .responsive-iframe + h2, p + h3, ul + h3, .resp
     margin-top: 20px;
 }
 
-.large-spacer {
+.medium-spacer {
     margin-top: 40px;
+}
+
+.large-spacer {
+    margin-top: 60px;
 }
 
 .clear-left {

@@ -9,6 +9,10 @@
 .bppicon:before {
     padding-right:15px;
 }
+.bppiconafter:before {
+    padding-right: 0;
+    padding-left: 10px;
+}
 .bppicon.block-icon:before {
     display: block;
 }

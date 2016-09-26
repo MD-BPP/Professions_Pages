@@ -6,6 +6,7 @@
     margin-top: -50px;
     padding-top: 50px;
     z-index: 1;
+    max-width: 100%;
 }
 
 @media (max-width: 350px) {
@@ -16,10 +17,15 @@
 
 section {
     padding: 60px 0;
+    overflow: hidden;
 }
 
-section.no-pad {
-    padding: 0;
+.no-pad {
+    padding: 0!important;
+}
+
+section.no-pad .container > div {
+    padding: 40px 0;
 }
 
 section:nth-child(even) {
@@ -73,6 +79,11 @@ section.banner {
     padding-top: 50px;
     min-height: 100%;
     min-height: 100vh;
+}
+
+.half-height {
+    min-height: 50vh;
+    padding: 12vh 0;
 }
 
 .ui-loader {
