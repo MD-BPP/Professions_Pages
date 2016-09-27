@@ -43,8 +43,12 @@
     display: flex;
 }
 
-.location-container.large {
+.location-container.quarter {
     flex-basis: 25%;
+}
+
+.location-container.half {
+    flex-basis: 45.5%;
 }
 
 a.location-container {
@@ -69,7 +73,9 @@ a.location-container {
 }
 
 .location-content p {
-    color: #fff;
+    color: #fff;    
+    line-height: 1.5;
+    margin: 0;
 }
 
 .location-grid {

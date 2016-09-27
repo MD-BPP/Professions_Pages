@@ -1,26 +1,29 @@
 .feature-section {
     display: flex;
-    flex: 1 1 auto;
     flex-wrap: wrap;
-    min-height:40vh;
+    height: inherit;
     flex-direction: row;
+    flex-shrink: 0;
 }
 
 .feature-60 {
     flex: 59%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     padding: 40px 0;
+    flex-shrink: 0;
 }
 
 .feature-40 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     flex-basis: 40%;
     flex: 40%;
     padding: 40px 0;
+    position: relative;
+    flex-shrink: 0;
 }
 
 .feature-container {
@@ -46,7 +49,7 @@
 @media (max-width: 991px) {
     
     .feature-section {
-        flex-direction: column;
+        flex-direction: row;
     }
     
     .feature-section.container {
@@ -65,7 +68,12 @@
     .feature-40 .feature-container {
         margin: -100px 60px auto 60px;
         background: #fff;
-        padding: 0 30px;
+        padding: 0 30px 100px 30px;
+        width: 100%;
+    }
+    
+    .feature-60 .feature-container {
+        align-self: flex-start;
     }
     
 }

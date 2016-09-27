@@ -349,3 +349,36 @@ $(document).ready(function(){
     $("#hidden-phone").val($("#phone").intlTelInput("getNumber"));
   });
 });
+
+
+
+
+
+
+
+
+
+
+
+//------------------------------------------------------
+// Carousel redaction on mobile
+//------------------------------------------------------
+
+
+$(window).resize(function() {
+    var window_size = window.matchMedia('(max-width: 991px)');
+    if (window.matchMedia('(max-width: 991px)').matches){
+        $('.card-carousel div[role="listbox"]').removeClass("carousel-inner");
+    }
+    else {
+        $('.card-carousel div[role="listbox"]').addClass("carousel-inner");
+    }
+})
+
+
+$(document).ready(function() {
+    var window_size = window.matchMedia('(max-width: 991px)');
+    if (window.matchMedia('(max-width: 991px)').matches){
+        $('.card-carousel div[role="listbox"]').removeClass("carousel-inner");
+    }
+})
